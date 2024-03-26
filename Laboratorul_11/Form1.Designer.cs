@@ -28,12 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            vara = new Button();
+            toamna = new Button();
+            iarna = new Button();
+            primavara = new Button();
+            SuspendLayout();
+            // 
+            // vara
+            // 
+            vara.Location = new Point(722, 60);
+            vara.Margin = new Padding(4);
+            vara.Name = "vara";
+            vara.Size = new Size(118, 30);
+            vara.TabIndex = 0;
+            vara.Text = "Vara";
+            vara.UseVisualStyleBackColor = true;
+            vara.Click += vara_Click;
+            // 
+            // toamna
+            // 
+            toamna.Location = new Point(722, 358);
+            toamna.Margin = new Padding(4);
+            toamna.Name = "toamna";
+            toamna.Size = new Size(118, 30);
+            toamna.TabIndex = 0;
+            toamna.Text = "Toamana";
+            toamna.UseVisualStyleBackColor = true;
+            toamna.Click += toamna_Click;
+            // 
+            // iarna
+            // 
+            iarna.Location = new Point(149, 358);
+            iarna.Margin = new Padding(4);
+            iarna.Name = "iarna";
+            iarna.Size = new Size(118, 30);
+            iarna.TabIndex = 0;
+            iarna.Text = "Iarna";
+            iarna.UseVisualStyleBackColor = true;
+            iarna.Click += iarna_Click;
+            // 
+            // primavara
+            // 
+            primavara.Location = new Point(149, 60);
+            primavara.Margin = new Padding(4);
+            primavara.Name = "primavara";
+            primavara.Size = new Size(118, 30);
+            primavara.TabIndex = 0;
+            primavara.Text = "Primavara";
+            primavara.UseVisualStyleBackColor = true;
+            primavara.Click += button4_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1000, 562);
+            Controls.Add(primavara);
+            Controls.Add(iarna);
+            Controls.Add(toamna);
+            Controls.Add(vara);
+            Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(4);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button vara;
+        private Button toamna;
+        private Button iarna;
+        private Button primavara;
     }
 }
